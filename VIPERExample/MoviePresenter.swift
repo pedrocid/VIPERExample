@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MoviePresenter: MoviePresenterProtocol {
+class MoviePresenter: MoviePresenterProtocol,MovieViewOutputProtocol {
     
     var wireframe: MovieWireFrameProtocol!
     var interactor: MovieInteractorProtocol!
@@ -24,7 +24,7 @@ class MoviePresenter: MoviePresenterProtocol {
     
 }
 
-extension MoviePresenter{
+extension MoviePresenter: MovieInteractorOutputProtocol{
 
     func presentMovie(movie: Movie){
     

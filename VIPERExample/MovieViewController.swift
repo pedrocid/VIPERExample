@@ -21,7 +21,7 @@ class MovieViewController: UIViewController, MovieViewProtocol {
 }
 
 
-extension MovieViewController{
+extension MovieViewController: MoviePresenterOutputProtocol{
 
     func display(movie: MovieViewModel) {
     

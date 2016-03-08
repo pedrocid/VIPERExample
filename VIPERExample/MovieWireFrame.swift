@@ -32,8 +32,3 @@ final class MovieWireFrame: MovieWireFrameProtocol {
         return view
     }
 }
-
-extension MovieViewController: MoviePresenterOutputProtocol{}
-
-extension MoviePresenter: MovieViewOutputProtocol{}
-extension MoviePresenter: MovieInteractorOutputProtocol{}
