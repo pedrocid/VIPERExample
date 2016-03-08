@@ -19,9 +19,7 @@ class MovieViewController: UIViewController, MovieViewProtocol {
     }
 
     @IBOutlet weak var movieTitle: UILabel!
-    
     @IBOutlet weak var movieYear: UILabel!
-    
     @IBOutlet weak var moviePlot: UITextView!
     @IBOutlet weak var movieDirector: UILabel!
     
