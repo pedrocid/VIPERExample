@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Movie View Controller-->
@@ -16,11 +17,77 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="F4u-ci-0zb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-L5-0ga">
+                                <rect key="frame" x="20" y="44" width="560" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ifs-xj-SDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k23-pW-dex">
+                                <rect key="frame" x="20" y="152" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="g4r-Aa-Vv0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXo-Uc-9A7">
+                                <rect key="frame" x="20" y="181" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zQj-Gt-zVM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X0a-vq-NIL">
+                                <rect key="frame" x="20" y="210" width="560" height="382"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="F4u-ci-0zb" secondAttribute="trailing" constant="-20" id="59q-7B-u3K"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Akc-L5-0ga" secondAttribute="leading" id="5dE-gb-b9P"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PXo-Uc-9A7" secondAttribute="leading" id="9Th-LJ-yeF"/>
+                            <constraint firstItem="k23-pW-dex" firstAttribute="top" secondItem="Akc-L5-0ga" secondAttribute="bottom" constant="8" id="Bmu-E0-KV4"/>
+                            <constraint firstItem="F4u-ci-0zb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="J3Z-yH-mcB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Akc-L5-0ga" secondAttribute="trailing" id="KDT-0r-5JH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X0a-vq-NIL" secondAttribute="trailing" id="Pj4-u0-WbQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X0a-vq-NIL" secondAttribute="bottom" constant="8" id="YOc-69-x13"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="X0a-vq-NIL" secondAttribute="leading" id="Zfc-f6-Adr"/>
+                            <constraint firstItem="X0a-vq-NIL" firstAttribute="top" secondItem="PXo-Uc-9A7" secondAttribute="bottom" constant="8" id="a8i-9A-dyh"/>
+                            <constraint firstItem="F4u-ci-0zb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="dgp-14-j61"/>
+                            <constraint firstItem="PXo-Uc-9A7" firstAttribute="top" secondItem="k23-pW-dex" secondAttribute="bottom" constant="8" id="gIG-eb-3oH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="k23-pW-dex" secondAttribute="leading" id="iaQ-hY-GUE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PXo-Uc-9A7" secondAttribute="trailing" id="pSb-Ad-gBW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k23-pW-dex" secondAttribute="trailing" id="phM-21-W0G"/>
+                            <constraint firstItem="Akc-L5-0ga" firstAttribute="top" secondItem="F4u-ci-0zb" secondAttribute="bottom" id="yLS-zD-paM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieDirector" destination="PXo-Uc-9A7" id="RNb-f5-tOI"/>
+                        <outlet property="moviePlot" destination="X0a-vq-NIL" id="xXw-jQ-48N"/>
+                        <outlet property="movieTitle" destination="Akc-L5-0ga" id="FX6-m2-hj3"/>
+                        <outlet property="movieYear" destination="k23-pW-dex" id="YgK-Eh-d6f"/>
+                        <outlet property="searchBar" destination="F4u-ci-0zb" id="NEI-nl-7C3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-54" y="270"/>
         </scene>
     </scenes>
 </document>
