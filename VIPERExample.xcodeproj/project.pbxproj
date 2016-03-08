@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50B56A01C8EEF8F005CDC24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B569F1C8EEF8F005CDC24 /* AppDelegate.swift */; };
+		F50B56A51C8EEF8F005CDC24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B56A31C8EEF8F005CDC24 /* Main.storyboard */; };
+		F50B56A71C8EEF8F005CDC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50B56A61C8EEF8F005CDC24 /* Assets.xcassets */; };
+		F50B56AA1C8EEF8F005CDC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50B56A81C8EEF8F005CDC24 /* LaunchScreen.storyboard */; };
+		F50B56B51C8EEF8F005CDC24 /* VIPERExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56B41C8EEF8F005CDC24 /* VIPERExampleTests.swift */; };
+		F50B56C91C8EF3F3005CDC24 /* MovieViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56C81C8EF3F3005CDC24 /* MovieViewProtocol.swift */; };
+		F50B56CB1C8EF426005CDC24 /* MoviePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56CA1C8EF426005CDC24 /* MoviePresenterProtocol.swift */; };
+		F50B56CD1C8EF430005CDC24 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56CC1C8EF430005CDC24 /* Movie.swift */; };
+		F50B56CF1C8EF444005CDC24 /* MovieWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56CE1C8EF444005CDC24 /* MovieWireFrameProtocol.swift */; };
+		F50B56D11C8EF4DB005CDC24 /* MovieInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56D01C8EF4DB005CDC24 /* MovieInteractorProtocol.swift */; };
+		F50B56D41C8EF546005CDC24 /* MovieAPIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56D31C8EF546005CDC24 /* MovieAPIClientProtocol.swift */; };
+		F50B56D61C8EFB93005CDC24 /* viper.png in Resources */ = {isa = PBXBuildFile; fileRef = F50B56D51C8EFB93005CDC24 /* viper.png */; };
+		F50B56D81C8EFE0F005CDC24 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56D71C8EFE0F005CDC24 /* MovieViewController.swift */; };
+		F50B56DA1C8EFE57005CDC24 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56D91C8EFE57005CDC24 /* MovieInteractor.swift */; };
+		F50B56DC1C8F0205005CDC24 /* MovieAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56DB1C8F0205005CDC24 /* MovieAPIClient.swift */; };
+		F50B56DE1C8F0269005CDC24 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B56DD1C8F0269005CDC24 /* MoviePresenter.swift */; };
+		F5199C371C8F10B700CEB46A /* MovieWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5199C361C8F10B700CEB46A /* MovieWireFrame.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F50B56B11C8EEF8F005CDC24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50B56941C8EEF8F005CDC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50B569B1C8EEF8F005CDC24;
+			remoteInfo = VIPERExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F50B569C1C8EEF8F005CDC24 /* VIPERExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50B569F1C8EEF8F005CDC24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50B56A41C8EEF8F005CDC24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F50B56A61C8EEF8F005CDC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F50B56A91C8EEF8F005CDC24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F50B56AB1C8EEF8F005CDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50B56B01C8EEF8F005CDC24 /* VIPERExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPERExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50B56B41C8EEF8F005CDC24 /* VIPERExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERExampleTests.swift; sourceTree = "<group>"; };
+		F50B56B61C8EEF8F005CDC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50B56C81C8EF3F3005CDC24 /* MovieViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewProtocol.swift; sourceTree = "<group>"; };
+		F50B56CA1C8EF426005CDC24 /* MoviePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePresenterProtocol.swift; sourceTree = "<group>"; };
+		F50B56CC1C8EF430005CDC24 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F50B56CE1C8EF444005CDC24 /* MovieWireFrameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieWireFrameProtocol.swift; sourceTree = "<group>"; };
+		F50B56D01C8EF4DB005CDC24 /* MovieInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInteractorProtocol.swift; sourceTree = "<group>"; };
+		F50B56D31C8EF546005CDC24 /* MovieAPIClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPIClientProtocol.swift; sourceTree = "<group>"; };
+		F50B56D51C8EFB93005CDC24 /* viper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viper.png; sourceTree = "<group>"; };
+		F50B56D71C8EFE0F005CDC24 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		F50B56D91C8EFE57005CDC24 /* MovieInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		F50B56DB1C8F0205005CDC24 /* MovieAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieAPIClient.swift; sourceTree = "<group>"; };
+		F50B56DD1C8F0269005CDC24 /* MoviePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		F5199C361C8F10B700CEB46A /* MovieWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieWireFrame.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50B56991C8EEF8F005CDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50B56AD1C8EEF8F005CDC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50B56931C8EEF8F005CDC24 = {
+			isa = PBXGroup;
+			children = (
+				F50B569E1C8EEF8F005CDC24 /* VIPERExample */,
+				F50B56B31C8EEF8F005CDC24 /* VIPERExampleTests */,
+				F50B569D1C8EEF8F005CDC24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50B569D1C8EEF8F005CDC24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50B569C1C8EEF8F005CDC24 /* VIPERExample.app */,
+				F50B56B01C8EEF8F005CDC24 /* VIPERExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50B569E1C8EEF8F005CDC24 /* VIPERExample */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56BF1C8EEFF5005CDC24 /* VIPER */,
+				F50B569F1C8EEF8F005CDC24 /* AppDelegate.swift */,
+				F50B56A31C8EEF8F005CDC24 /* Main.storyboard */,
+				F50B56A61C8EEF8F005CDC24 /* Assets.xcassets */,
+				F50B56A81C8EEF8F005CDC24 /* LaunchScreen.storyboard */,
+				F50B56AB1C8EEF8F005CDC24 /* Info.plist */,
+			);
+			path = VIPERExample;
+			sourceTree = "<group>";
+		};
+		F50B56B31C8EEF8F005CDC24 /* VIPERExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56B41C8EEF8F005CDC24 /* VIPERExampleTests.swift */,
+				F50B56B61C8EEF8F005CDC24 /* Info.plist */,
+			);
+			path = VIPERExampleTests;
+			sourceTree = "<group>";
+		};
+		F50B56BF1C8EEFF5005CDC24 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56D51C8EFB93005CDC24 /* viper.png */,
+				F50B56C11C8EF001005CDC24 /* views */,
+				F50B56C21C8EF007005CDC24 /* interactors */,
+				F50B56C61C8EF02B005CDC24 /* presenters */,
+				F50B56C51C8EF021005CDC24 /* entities */,
+				F50B56C71C8EF03B005CDC24 /* routers_wireframe */,
+				F50B56D21C8EF534005CDC24 /* data managers */,
+			);
+			name = VIPER;
+			sourceTree = "<group>";
+		};
+		F50B56C11C8EF001005CDC24 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56C41C8EF016005CDC24 /* uiviewcontrollers */,
+				F50B56C31C8EF010005CDC24 /* uiviews */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		F50B56C21C8EF007005CDC24 /* interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56D01C8EF4DB005CDC24 /* MovieInteractorProtocol.swift */,
+				F50B56D91C8EFE57005CDC24 /* MovieInteractor.swift */,
+			);
+			name = interactors;
+			sourceTree = "<group>";
+		};
+		F50B56C31C8EF010005CDC24 /* uiviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = uiviews;
+			sourceTree = "<group>";
+		};
+		F50B56C41C8EF016005CDC24 /* uiviewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56C81C8EF3F3005CDC24 /* MovieViewProtocol.swift */,
+				F50B56D71C8EFE0F005CDC24 /* MovieViewController.swift */,
+			);
+			name = uiviewcontrollers;
+			sourceTree = "<group>";
+		};
+		F50B56C51C8EF021005CDC24 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56CC1C8EF430005CDC24 /* Movie.swift */,
+			);
+			name = entities;
+			sourceTree = "<group>";
+		};
+		F50B56C61C8EF02B005CDC24 /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56CA1C8EF426005CDC24 /* MoviePresenterProtocol.swift */,
+				F50B56DD1C8F0269005CDC24 /* MoviePresenter.swift */,
+			);
+			name = presenters;
+			sourceTree = "<group>";
+		};
+		F50B56C71C8EF03B005CDC24 /* routers_wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56CE1C8EF444005CDC24 /* MovieWireFrameProtocol.swift */,
+				F5199C361C8F10B700CEB46A /* MovieWireFrame.swift */,
+			);
+			name = routers_wireframe;
+			sourceTree = "<group>";
+		};
+		F50B56D21C8EF534005CDC24 /* data managers */ = {
+			isa = PBXGroup;
+			children = (
+				F50B56D31C8EF546005CDC24 /* MovieAPIClientProtocol.swift */,
+				F50B56DB1C8F0205005CDC24 /* MovieAPIClient.swift */,
+			);
+			name = "data managers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50B569B1C8EEF8F005CDC24 /* VIPERExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50B56B91C8EEF8F005CDC24 /* Build configuration list for PBXNativeTarget "VIPERExample" */;
+			buildPhases = (
+				F50B56981C8EEF8F005CDC24 /* Sources */,
+				F50B56991C8EEF8F005CDC24 /* Frameworks */,
+				F50B569A1C8EEF8F005CDC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPERExample;
+			productName = VIPERExample;
+			productReference = F50B569C1C8EEF8F005CDC24 /* VIPERExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F50B56AF1C8EEF8F005CDC24 /* VIPERExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50B56BC1C8EEF8F005CDC24 /* Build configuration list for PBXNativeTarget "VIPERExampleTests" */;
+			buildPhases = (
+				F50B56AC1C8EEF8F005CDC24 /* Sources */,
+				F50B56AD1C8EEF8F005CDC24 /* Frameworks */,
+				F50B56AE1C8EEF8F005CDC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50B56B21C8EEF8F005CDC24 /* PBXTargetDependency */,
+			);
+			name = VIPERExampleTests;
+			productName = VIPERExampleTests;
+			productReference = F50B56B01C8EEF8F005CDC24 /* VIPERExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50B56941C8EEF8F005CDC24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pedro Cid";
+				TargetAttributes = {
+					F50B569B1C8EEF8F005CDC24 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F50B56AF1C8EEF8F005CDC24 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F50B569B1C8EEF8F005CDC24;
+					};
+				};
+			};
+			buildConfigurationList = F50B56971C8EEF8F005CDC24 /* Build configuration list for PBXProject "VIPERExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50B56931C8EEF8F005CDC24;
+			productRefGroup = F50B569D1C8EEF8F005CDC24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50B569B1C8EEF8F005CDC24 /* VIPERExample */,
+				F50B56AF1C8EEF8F005CDC24 /* VIPERExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50B569A1C8EEF8F005CDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50B56AA1C8EEF8F005CDC24 /* LaunchScreen.storyboard in Resources */,
+				F50B56A71C8EEF8F005CDC24 /* Assets.xcassets in Resources */,
+				F50B56D61C8EFB93005CDC24 /* viper.png in Resources */,
+				F50B56A51C8EEF8F005CDC24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50B56AE1C8EEF8F005CDC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50B56981C8EEF8F005CDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50B56CB1C8EF426005CDC24 /* MoviePresenterProtocol.swift in Sources */,
+				F50B56A01C8EEF8F005CDC24 /* AppDelegate.swift in Sources */,
+				F50B56D11C8EF4DB005CDC24 /* MovieInteractorProtocol.swift in Sources */,
+				F50B56C91C8EF3F3005CDC24 /* MovieViewProtocol.swift in Sources */,
+				F50B56DA1C8EFE57005CDC24 /* MovieInteractor.swift in Sources */,
+				F5199C371C8F10B700CEB46A /* MovieWireFrame.swift in Sources */,
+				F50B56D81C8EFE0F005CDC24 /* MovieViewController.swift in Sources */,
+				F50B56DE1C8F0269005CDC24 /* MoviePresenter.swift in Sources */,
+				F50B56DC1C8F0205005CDC24 /* MovieAPIClient.swift in Sources */,
+				F50B56D41C8EF546005CDC24 /* MovieAPIClientProtocol.swift in Sources */,
+				F50B56CD1C8EF430005CDC24 /* Movie.swift in Sources */,
+				F50B56CF1C8EF444005CDC24 /* MovieWireFrameProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50B56AC1C8EEF8F005CDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50B56B51C8EEF8F005CDC24 /* VIPERExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F50B56B21C8EEF8F005CDC24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50B569B1C8EEF8F005CDC24 /* VIPERExample */;
+			targetProxy = F50B56B11C8EEF8F005CDC24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F50B56A31C8EEF8F005CDC24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50B56A41C8EEF8F005CDC24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F50B56A81C8EEF8F005CDC24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50B56A91C8EEF8F005CDC24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50B56B71C8EEF8F005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F50B56B81C8EEF8F005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50B56BA1C8EEF8F005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VIPERExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocid.VIPERExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F50B56BB1C8EEF8F005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VIPERExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocid.VIPERExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F50B56BD1C8EEF8F005CDC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VIPERExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocid.VIPERExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPERExample.app/VIPERExample";
+			};
+			name = Debug;
+		};
+		F50B56BE1C8EEF8F005CDC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VIPERExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedrocid.VIPERExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPERExample.app/VIPERExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50B56971C8EEF8F005CDC24 /* Build configuration list for PBXProject "VIPERExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50B56B71C8EEF8F005CDC24 /* Debug */,
+				F50B56B81C8EEF8F005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50B56B91C8EEF8F005CDC24 /* Build configuration list for PBXNativeTarget "VIPERExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50B56BA1C8EEF8F005CDC24 /* Debug */,
+				F50B56BB1C8EEF8F005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50B56BC1C8EEF8F005CDC24 /* Build configuration list for PBXNativeTarget "VIPERExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50B56BD1C8EEF8F005CDC24 /* Debug */,
+				F50B56BE1C8EEF8F005CDC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50B56941C8EEF8F005CDC24 /* Project object */;
+}
